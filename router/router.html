@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密碼機</title>
+    <style>
+        head{
+            font-family: 微軟正黑體 新細明體;
+        }
+        div{
+            border: solid black 3px;
+            margin: 5px;
+            width: 200px;
+            padding: 2px;
+        }
+        a:link{
+            color: black;
+            text-decoration: none;
+
+        }
+        a:visited{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <label for = "group">組別(數字):</label>
+    <input type = "text" id = "group" onchange = "getElementById('link').innerHTML = route(parseInt(this.value));">
+    <p id = "link"></p>
+    <script src = "./router.js"></script>
+</body>
+</html>
